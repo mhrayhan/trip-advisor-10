@@ -34,10 +34,10 @@ const handleSignin = event => {
     
 }
     return (
-        <div>
+        <div className='pb-3'>
             <Header></Header>
+            <div className='login-form mt-5 pt-3'>
             <h2 className='text-center'>Please Login</h2>
-            <div className='login-form'>
                 <Form onSubmit={handleSignin} className='p-3'>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -52,8 +52,8 @@ const handleSignin = event => {
                 Login
             </Button>
             </Form>
-            <p className='p-2 pb-3'>Are you new in Trip advisor? <Link className='text-decoration-none' to='/register'>Please Register</Link></p>
-           <SocialLogin></SocialLogin>
+            <p className='p-3 pb-0 mb-0 pt-0'>Are you new in Trip advisor? <Link className='text-decoration-none' to='/register'>Please Register</Link></p>
+           <div className='p-3'><SocialLogin></SocialLogin></div>
             </div>
         </div>
     );

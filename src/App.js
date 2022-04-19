@@ -9,6 +9,8 @@ import RequireAuth from './components/RequireAuth/RequireAuth';
 import CheckOut from './components/CheckOut/CheckOut';
 import ServiceDescription from './components/ServiceDescription/ServiceDescription';
 import Blogs from './components/Blogs/Blogs';
+import About from './components/About/About';
+
 
 
 function App() {
@@ -30,6 +32,7 @@ function App() {
         }></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>

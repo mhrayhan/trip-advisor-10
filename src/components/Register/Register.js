@@ -25,8 +25,8 @@ const Register = () => {
     return (
         <div>
             <Header></Header>
+            <div className='login-form mt-3 pt-3'>
             <h2 className='text-center'>Please Register</h2>
-            <div className='login-form'>
                 <Form onSubmit={handleRagister} className='p-3'>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Your Name</Form.Label>
@@ -49,8 +49,8 @@ const Register = () => {
                 Register
             </Button>
             </Form>
-            <p className='p-2 pb-3'>Already Register? <Link className='text-decoration-none' to='/login'>Please Login</Link></p>
-            <SocialLogin></SocialLogin>
+            <p className='p-3 m-0 pb-0  pt-0'>Already Register? <Link className='text-decoration-none' to='/login'>Please Login</Link></p>
+            <div className='p-3'><SocialLogin></SocialLogin></div>
             </div>
         </div>
     );

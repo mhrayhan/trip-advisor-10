@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Services from '../Services/Services';
 import Slider from '../Slider/Slider';
+import './Responsive.css'
 
 const Home = () => {
     return (
