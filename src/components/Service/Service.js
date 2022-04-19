@@ -1,8 +1,14 @@
 import React from 'react';
+import {  useNavigate } from 'react-router-dom';
 import './Service.css'
 
-const Service = (props) => {
-    const {name, img, description, price} = props.service;
+const Service = ({service}) => {
+    const { name, img, description, price} = service;
+    const navigate = useNavigate();
+    const navigateToServiceDescription = id => {
+        navigate(`/service/${id}`);
+    }
+
     return (
         <div>
             <div className='service'>
@@ -11,7 +17,7 @@ const Service = (props) => {
                     <h3>{name}</h3>
                 <p>Price: {price}</p>
                 <p>{description}</p>
-                <button className='btn btn-primary'>Show Details</button>
+                <button onClick={()=>navigateToServiceDescription(description)} className='btn btn-primary'>Show Details</button>
                 </div>
             </div>
         </div>
