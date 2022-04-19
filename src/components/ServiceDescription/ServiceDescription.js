@@ -8,7 +8,10 @@ const ServiceDescription = () => {
     return (
         <div>
             <Header></Header>
-            <p className='service-desc  mt-5'>{serviceId}</p>
+            <div className='service-desc mt-5'>
+                <h5>Description about service:</h5>
+            <p className=''>{serviceId}</p>
+        </div>
         </div>
     );
 };

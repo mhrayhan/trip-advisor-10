@@ -14,7 +14,7 @@ const About = () => {
                     <h1>I'm Mozammel Hoque</h1>
                     <p>I'm a proud student of 'Programming Hero'. My goal is to see myself as a Frontend Developer in 2022. I learnet a lot from my favorit teacher 'Jhankar Mahbub'. He motivated me to start my career as a Developer.</p>
                 </div>
-                <img className='rounded mt-3' src={imgMe} alt="" />
+                <img className='rounded mt-3 shadow' src={imgMe} alt="" />
             </div>
         </div>
     );
