@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant&family=Courgette&family=Inter:wght@400;500&family=Kaisei+Decol:wght@400;700&family=Kaushan+Script&family=Poppins:wght@400;500;700&family=Racing+Sans+One&family=Roboto:wght@400;700&family=Squada+One&family=Yeseva+One&display=swap');
+.about-me p{
+    font-size: 1.2em;
+    font-family: 'Courgette', cursive;
+
+}
+.about-me{
+        font-family: 'Cormorant', serif;
+
+}
