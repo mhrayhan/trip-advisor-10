@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -12,7 +12,8 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+
     const handleRagister = event =>{
             event.preventDefault();
             const email = event.target.email.value;
